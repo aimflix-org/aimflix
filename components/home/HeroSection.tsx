@@ -151,7 +151,7 @@ export default function HeroSection() {
                       Ready to Start?
                     </h3>
                     <p className="text-red-200 text-xs">
-                      Let's begin your journey today
+                      Let&apos;s begin your journey today
                     </p>
                   </div>
                   <div className="w-10 h-10 bg-gradient-to-r from-red-500 to-red-600 rounded-lg flex items-center justify-center shadow-lg group-hover:scale-110 transition-all duration-300">

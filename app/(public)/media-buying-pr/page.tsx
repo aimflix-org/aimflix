@@ -159,7 +159,7 @@ export default function MediaBuyingPRPage() {
         {/* Call to Action */}
         <div className="bg-red-600 rounded-lg p-8 text-center">
           <h2 className="text-3xl font-bold mb-4 text-white">
-            Ready to Enhance Your Institution's Visibility?
+            Ready to Enhance Your Institution&apos;s Visibility?
           </h2>
           <p className="text-xl mb-6 text-red-100">
             Let us help you develop a comprehensive media buying and PR strategy that drives results.
