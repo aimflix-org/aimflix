@@ -1,10 +1,20 @@
 import PublicLayout from '@/components/layout/PublicLayout';
-import HomePage from './(public)/page';
+import {
+  HeroSection,
+  ServicesSection,
+  WhyChooseUsSection,
+  CallToActionSection
+} from '@/components/home';
 
 export default function RootPage() {
   return (
     <PublicLayout>
-      <HomePage />
+      <div className="min-h-screen bg-white text-gray-900">
+        <HeroSection />
+        <ServicesSection />
+        <WhyChooseUsSection />
+        <CallToActionSection />
+      </div>
     </PublicLayout>
   );
 } 
