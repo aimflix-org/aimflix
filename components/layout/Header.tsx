@@ -62,7 +62,7 @@ export default function Header() {
           </nav>
 
           {/* Desktop Actions */}
-          <div className="hidden md:flex items-center">
+          <div className="hidden md:flex items-center space-x-4">
             {/* Contact Button */}
             <Link 
               href="/contact"
@@ -91,7 +91,7 @@ export default function Header() {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden">
-                         <div className="px-2 pt-2 pb-3 space-y-1 bg-white rounded-2xl shadow-2xl border border-gray-200 mt-4 animate-fade-in-up">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-white rounded-2xl shadow-2xl border border-gray-200 mt-4 animate-fade-in-up">
               {navigationItems.map((item, index) => {
                 const IconComponent = item.icon;
                 return (

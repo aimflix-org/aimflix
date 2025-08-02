@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Globe, ArrowRight, Sparkles, CheckCircle, GraduationCap, FileText, Plane, DollarSign, Home, Users } from "lucide-react";
+import { Globe, ArrowRight, Sparkles, CheckCircle, GraduationCap, FileText, Plane } from "lucide-react";
 
 export default function HeroSection() {
   const serviceCards = [
@@ -16,35 +16,14 @@ export default function HeroSection() {
       description: "Streamlined visa application support",
       icon: FileText,
       color: "from-green-500 to-green-600",
-      delay: "0.4s"
-    },
-    {
-      title: "Migration Advisory",
-      description: "Strategic migration consultation",
-      icon: Users,
-      color: "from-purple-500 to-purple-600",
       delay: "0.5s"
-    },
-    {
-      title: "Investment Facilitation",
-      description: "Global investment opportunities",
-      icon: DollarSign,
-      color: "from-yellow-500 to-yellow-600",
-      delay: "0.6s"
     },
     {
       title: "Travel Support",
       description: "Seamless travel arrangements",
       icon: Plane,
-      color: "from-red-500 to-red-600",
+      color: "from-purple-500 to-purple-600",
       delay: "0.7s"
-    },
-    {
-      title: "Relocation Support",
-      description: "Post-admission assistance",
-      icon: Home,
-      color: "from-indigo-500 to-indigo-600",
-      delay: "0.8s"
     }
   ];
 
@@ -114,48 +93,51 @@ export default function HeroSection() {
           </div>
           
           <div className="relative animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid gap-4">
               {serviceCards.map((service, index) => {
                 const IconComponent = service.icon;
                 return (
                   <div 
                     key={index}
-                    className="group relative bg-white/10 backdrop-blur-xl rounded-xl p-4 border border-white/20 hover:scale-105 transition-all duration-300 animate-fade-in-up hover:bg-white/20"
+                    className="group relative bg-white/10 backdrop-blur-xl rounded-2xl p-6 border border-white/20 hover:scale-105 transition-all duration-300 animate-fade-in-up"
                     style={{ animationDelay: service.delay }}
                   >
-                    <div className="flex flex-col items-center text-center gap-3">
-                      <div className={`w-10 h-10 bg-gradient-to-r ${service.color} rounded-lg flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}>
-                        <IconComponent className="w-5 h-5 text-white" />
+                    <div className="flex items-start gap-4">
+                      <div className={`w-12 h-12 bg-gradient-to-r ${service.color} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 flex-shrink-0`}>
+                        <IconComponent className="w-6 h-6 text-white" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-sm font-bold text-white mb-1 group-hover:text-red-200 transition-colors leading-tight">
+                        <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-200 transition-colors">
                           {service.title}
                         </h3>
-                        <p className="text-gray-300 text-xs leading-relaxed">
+                        <p className="text-gray-300 text-sm leading-relaxed">
                           {service.description}
                         </p>
+                      </div>
+                      <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
+                        <ArrowRight className="w-5 h-5 text-red-400" />
                       </div>
                     </div>
                     
                     {/* Hover effect overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-orange-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-orange-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
                 );
               })}
               
-              {/* Call to action card - spans full width */}
-              <div className="col-span-2 group relative bg-gradient-to-r from-red-600/20 to-red-700/20 backdrop-blur-xl rounded-xl p-4 border border-red-500/30 hover:scale-105 transition-all duration-300 animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
+              {/* Call to action card */}
+              <div className="group relative bg-gradient-to-r from-red-600/20 to-red-700/20 backdrop-blur-xl rounded-2xl p-6 border border-red-500/30 hover:scale-105 transition-all duration-300 animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="text-sm font-bold text-white mb-1">
+                    <h3 className="text-lg font-bold text-white mb-2">
                       Ready to Start?
                     </h3>
-                    <p className="text-red-200 text-xs">
-                      Let&apos;s begin your journey today
+                    <p className="text-red-200 text-sm">
+                      Let's begin your journey today
                     </p>
                   </div>
-                  <div className="w-10 h-10 bg-gradient-to-r from-red-500 to-red-600 rounded-lg flex items-center justify-center shadow-lg group-hover:scale-110 transition-all duration-300">
-                    <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" />
+                  <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-red-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-all duration-300">
+                    <ArrowRight className="w-6 h-6 text-white group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
               </div>
