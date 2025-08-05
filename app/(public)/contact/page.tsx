@@ -8,7 +8,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to start your educational journey? Get in touch with our expert team for personalized guidance and support.
+            Ready to start your educational journey? Get in touch with us for personalized guidance and support.
           </p>
         </div>
 
