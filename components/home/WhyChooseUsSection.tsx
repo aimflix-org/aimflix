@@ -86,7 +86,7 @@ export default function WhyChooseUsSection() {
                 
                 <h3 className="text-2xl font-bold mb-4 text-gray-900">Trusted Partner</h3>
                 <p className="text-gray-600 mb-8 leading-relaxed">
-                  Your success is our priority. We&apos;re committed to your educational journey from start to finish.
+                  Your success is our priority. We are committed to your educational journey from start to finish.
                 </p>
                 
                 <div className="grid grid-cols-2 gap-6">
