@@ -173,7 +173,7 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Your Success Partner</h3>
-                <p className="text-gray-600">We're committed to your educational journey from start to finish</p>
+                <p className="text-gray-600">We&apos;re committed to your educational journey from start to finish</p>
               </div>
             </div>
           </div>
